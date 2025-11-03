@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Survey Form/surveyForm.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Personal Survey</h1>
+        <p id="description">Your feedback is essentialfor us. Please take a moment to fill out the form.</p>
+    </header>
+
+    <main>
+        <form id="survey-form" action="#" method="post">
+            
+            <div class="form-group">
+                <label id="name-label" for="name">First Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+                <br><br>
+                <label id="name-label" for="name">Middle name (Not Required)</label>
+                <input type="text" id="name" name="name" placeholder="Enter your middle Name">
+                <br><br>
+                <label id="name-label" for="name">Last Name</label>
+                <input type="text" id="name" name="Name" placeholder="Enter Your last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" name="number" min="18" max="100" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Favorite Color</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option value="" disabled selected>Select your preferred color</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+
+            <div class="form-group fieldset-group">
+                <legend>Gender</legend>
+                <div class="option-group">
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"> Other
+                        <input type="text" placeholder="pls specify">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group fieldset-group">
+                <legend>Interests (select all that apply)</legend>
+                <div class="option-group">
+                    <label>
+                        <input type="checkbox" name="interests" value="sports"> Sports
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="music"> Music
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="reading"> Reading
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Others"> Other
+                        <input type="text" placeholder="pls specify">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Share any additional thoughts or feedback here..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit Feedback</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Survey Form.</p>
+    </footer>
+</body>
+</html>
