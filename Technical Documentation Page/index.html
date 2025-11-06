@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Java Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <a href="#Introduction_to_Java" class="nav-link">Introduction to Java</a>
+        <a href="#Classes_and_Objects" class="nav-link">Classes and Objects</a>
+        <a href="#Data_Types_and_Variables" class="nav-link">Data Types and Variables</a></a>
+        <a href="#Control_Flow_Statements" class="nav-link">Control Flow Statements</a>
+        <a href="#Exception_Handling" class="nav-link">Exception Handling</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction_to_Java" class="main-section">
+            <header>introduction to java</header>
+            <p>Java is a high-level, class-based, object-oriented programming language. It is used to develop desktop and mobile applications, web applications, and much more.</p>
+            <p>One of the key features of Java is its "write once, run anywhere" philosophy. This is achieved through bytecode compilation, where Java source code is compiled into bytecode that can be executed on any JVM.</p>
+            <p>To get started with Java, you need to install the Java Development Kit (JDK). Here's a simple example of a Java program:</p>
+            <code>public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }</code>
+            <p>Java supports various paradigms, including procedural and functional programming. It is widely used for web development, mobile apps (Android), and enterprise applications.</p>
+            <ul>
+                <li>Platform-independent</li>
+                <li>Object-oriented</li>
+                <li>Automatic memory management</li>
+            </ul>
+        </section>
+        <section id="Classes_and_Objects" class="main-section">
+            <header>Classes and Objects</header>
+            <p>In Java, a class is a blueprint for creating objects. It defines the properties (fields) and behaviors (methods) that objects of that class will have.</p>
+            <p>An object is an instance of a class. You can create multiple objects from the same class, each with its own state.</p>
+            <code>class Car { String model; void drive() { System.out.println("Driving"); } }</code>
+            <p>To create an object, use the 'new' keyword: <code>Car myCar = new Car();</code></p>
+            <p>Classes can have constructors, which are special methods called when an object is instantiated.</p>
+            <ol>
+                <li>Define the class</li>
+                <li>Create object</li>
+                <li>Access fields and methods</li>
+            </ol>
+        </section>
+
+        <section id="Data_Types_and_Variables" class="main-section">
+            <header>data types and variables</header>
+            <p>Java has two main categories of data types: primitive and reference. Primitive types include int, double, boolean, and char.</p>
+            <p>Variables are used to store data. You must declare a variable with its type before using it.</p>
+            <code>int age = 25; double price = 19.99; boolean isStudent = true;</code>
+            <p>Reference types include classes, arrays, and interfaces. Strings are a common reference type.</p>
+            <p>Java is statically typed, meaning variable types are checked at compile time.</p>
+            <ul>
+                <li>Primitive types: byte, short, int, long, float, double, char, boolean</li>
+                <li>Reference types: objects, arrays</li>
+            </ul>
+        </section>
+
+        <section id="Control_Flow_Statements" class="main-section">
+            <header>control flow statements</header>
+            <p>Control flow statements allow you to control the execution order of your program. Common ones include if-else, switch, for, while, and do-while.</p>
+            <p>The if statement executes code based on a condition: <code>if (age > 18) { System.out.println("Adult"); }</code></p>
+            <p>Loops like for are used for repetition: <code>for (int i = 0; i < 10; i++) { System.out.println(i); }</code></p>
+            <p>The switch statement is useful for multiple conditions.</p>
+            <ol>
+                <li>Conditional statements: if, else, switch</li>
+                <li>Loops: for, while, do-while</li>
+            </ol>
+        </section>
+
+        <section id="Exception_Handling" class="main-section">
+            <header>Exception Handling</header>
+            <p>Exceptions are events that occur during program execution that disrupt the normal flow. Java provides try-catch blocks to handle them.</p>
+            <p>Use try to enclose risky code, and catch to handle exceptions: <code>try { int result = 10 / 0; } catch (ArithmeticException e) { System.out.println("Division by zero"); }</code></p>
+            <p>The finally block executes regardless of whether an exception occurs.</p>
+            <p>Custom exceptions can be created by extending the Exception class.</p>
+            <ul>
+                <li>Checked exceptions: must be handled or declared</li>
+                <li>Unchecked exceptions: runtime exceptions</li>
+            </ul>
+        </section>
+    </main>
+</body> 
+</html>
