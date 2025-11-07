@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+         <nav id="nav-bar">
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#form-section" class="nav-link">Form Section</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="features">
+            <h2>Experience Crystal clear sound</h2>
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Hi-Fi Sound</h3>
+                    <p>Experience crystal clear sound with industry-leading Hi-Fi technology</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔋</div>
+                    <h3>50 Hour Battery</h3>
+                    <p>Keep the music going all week with industry-leading battery life and quick charging.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Ultimate Comfort</h3>
+                    <p>Enjoy all-day comfort with our ergonomic design and premium materials.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>Product</h2>
+            <div id="video-wrapper">
+                <iframe 
+                src="https://www.youtube.com/watch?v=A3Yap7TzWS8" 
+                frameborder="0"
+                allowfullscreen
+                title="Headphones Product Video">
+            </iframe>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <h2>Pre-Order Your Headphone Now!!!</h2>
+            <p>Sign up to receive a 20% early-bird discount code and exclusive updates.</p>
+
+            <form id="form" method="post">
+                <input type="email" 
+                       name="email" 
+                       id="email" 
+                       placeholder="Enter your email" 
+                       required>
+
+                       <input type="submit"
+                              id="submit"
+                              value="Get 50% Discount Voucher">
+            </form>
+        </section>
+    </main>
+    <footer class="container">
+        &copy; 2025 Headphones. Engineered for your ears.
+    </footer>
+</body>
+</html>
