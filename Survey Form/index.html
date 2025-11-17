@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <header>
+            <h1 id="title">Personal Survey</h1>
+            <p id="description">Your feedback is essential for us. Please take a moment to fill out the form.</p>
+        </header>
+        <main>
+            <form id="survey-form" action="#" method="post"> 
+                
+                <div class="form-group">
+                    <label>Full Name</label> 
+                    <div class="name-input-group">
+                        <label id="name-label-first" for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="name-input-group">
+                        <label id="name-label-middle" for="middle-name">Middle name (Optional)</label>
+                        <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle Name">
+                    </div>
+                    <div class="name-input-group">
+                        <label id="name-label-last" for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter Your last Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" id="number" name="number" min="18" max="100" placeholder="Enter your age" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dropdown">Favorite Color</label>
+                    <select id="dropdown" name="favorite-color" required>
+                        <option value="" disabled selected>Select your preferred color</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </div>
+                <div class="form-group fieldset-group">
+                    <legend>Gender</legend>
+                    <div class="option-group">
+                        <label>
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other"> Other
+                        </label>
+                        <label class="specify-label">
+                            <input type="text" name="gender-specify" placeholder="Please specify if 'Other'">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group fieldset-group">
+                    <legend>Interests (Select all that apply)</legend>
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" name="interests" value="sports"> Sports
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="music"> Music
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="reading"> Reading
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="others"> Other
+                        </label>
+                        <label class="specify-label">
+                            <input type="text" name="interests-specify" placeholder="Please specify if 'Other'">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Share any additional thoughts or feedback here..."></textarea>
+                </div>
+    
+                <button type="submit" id="submit">Submit Feedback</button>
+            </form>
+        </main>
+    
+        <footer>
+            <p>&copy; 2025 Minimal Survey.</p>
+        </footer>
+    </body>
+    </html>
