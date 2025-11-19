@@ -4,76 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Product Landing Page</title>
+    <title>E-Commerce</title>
 </head>
 <body>
-    <header id="header">
-         <nav id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                <li><a href="#form-section" class="nav-link">Form Section</a></li>
-            </ul>
-         </nav>
-    </header>
-
-    <main class="container">
-
-        <section id="features">
-            <h2>Experience Crystal clear sound</h2>
-            <div class="features-grid">
-
-                <div class="feature-item">
-                    <div class="feature-icon">🔊</div>
-                    <h3>Hi-Fi Sound</h3>
-                    <p>Experience crystal clear sound with industry-leading Hi-Fi technology</p>
+        <header id="header">
+            <img id="header-img" src="/Product Landing Page/Logo.png" alt="Logo">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </header>
+    <section id="Main" class="Main">
+        <h1>Gadget Accessories</h1>
+        <p>Quality products, High-performance and Reliable service.</p>
+    </section>
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <div class="features-container">
+                <div class="feature-box">
+                    <h3>Modern Design</h3>
+                    <p>Precision-engineered accessories built for clean, streamlined setups.</p>
                 </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">🔋</div>
-                    <h3>50 Hour Battery</h3>
-                    <p>Keep the music going all week with industry-leading battery life and quick charging.</p>
+                <div class="feature-box">
+                    <h3>Reliable Tech Materials</h3>
+                    <p>Build using eco-conscious components.</p>
                 </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">☁️</div>
-                    <h3>Ultimate Comfort</h3>
-                    <p>Enjoy all-day comfort with our ergonomic design and premium materials.</p>
+    
+                <div class="feature-box">
+                    <h3>Fast Shipping</h3>
+                    <p>We ship worldwide with tracked delivery.</p>
                 </div>
             </div>
         </section>
-
-        <section id="how-it-works">
-            <h2>Product</h2>
-            <div id="video-wrapper">
-                <iframe 
-                src="https://www.youtube.com/watch?v=A3Yap7TzWS8" 
-                frameborder="0"
-                allowfullscreen
-                title="Headphones Product Video">
-            </iframe>
+    <section id="products" class="section">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img class="product-img" src="https://assets2.razerzone.com/images/pnx.assets/38a3977dfce76683fc5f9dc73d6ccfb6/razer-blade-14.webp" alt="Razer Blade 18">
+                <p>Razer Blade 18</p>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGFQ4?wid=4000&hei=4000&fmt=jpeg&qlt=90&.v=1757534575976" alt="iPhone 17 Pro Max">
+                <p>iPhone 17 Pro Max</p>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://images.samsung.com/is/image/samsung/p6pim/ph/ls27dg610sexxp/gallery/ph-odyssey-oled-g6-g61sd-ls27dg610sexxp-545464872" alt="Odyssey OLED G6 Monitor">
+                <p>Odyssey OLED G6 Monitor</p>
+            </div>
+        </div>
+    </section>
+        <section class="section">
+            <h2>Product Video</h2>
+            <br><br>
+            <div class="video-container">
+                <iframe
+                    id="video"
+                    src="https://www.youtube.com/watch?v=57i2dGegt_M"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
-
-        <section id="form-section">
-            <h2>Pre-Order Your Headphone Now!!!</h2>
-            <p>Sign up to receive a 20% early-bird discount code and exclusive updates.</p>
-
-            <form id="form" method="post">
-                <input type="email" 
-                       name="email" 
-                       id="email" 
-                       placeholder="Enter your email" 
-                       required>
-
-                       <input type="submit"
-                              id="submit"
-                              value="Get 50% Discount Voucher">
-            </form>
-        </section>
-    </main>
-    <footer class="container">
-        &copy; 2025 Headphones. Engineered for your ears.
-    </footer>
+    <section id="contact" class="section">
+        <h2>Stay Updated</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+            <input id="submit" type="submit" value="Subscribe">
+        </form>
+    </section>
 </body>
 </html>
