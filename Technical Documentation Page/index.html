@@ -3,160 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation</title>
+    <title>Technical Documentation Page</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
     <nav id="navbar">
         <header>VS Code Shortcuts</header>
-        <div style="padding-top: 0.5rem;">
-            <a href="#General_Editing" class="nav-link">General Editing</a>
-            <a href="#File_and_Window_Management" class="nav-link">File and Window Management</a>
-            <a href="#Navigation_and_Search" class="nav-link">Navigation and Search</a>
-            <a href="#Debugging_Controls" class="nav-link">Debugging Controls</a>
-            <a href="#Multi-Cursor_and_Selection" class="nav-link">Multi-Cursor and Selection</a>
-            <a href="#Terminal_and_Tasks" class="nav-link">Terminal and Tasks</a>
-            <a href="#Code_Refactoring" class="nav-link">Code Refactoring</a>
-        </div>
+        <ul>
+            <li><a href="#General_Editing" class="nav-link">General Editing</a></li>
+            <li><a href="#File_and_Window_Management" class="nav-link">File and Window Management</a></li>
+            <li><a href="#Navigation_and_Search" class="nav-link">Navigation and Search</a></li>
+            <li><a href="#Debugging_Controls" class="nav-link">Debugging Controls</a></li>
+            <li><a href="#Multi-Cursor_and_Selection" class="nav-link">Multi-Cursor and Selection</a></li>
+            <li><a href="#Terminal_and_Tasks" class="nav-link">Terminal and Tasks</a></li>
+            <li><a href="#Code_Refactoring" class="nav-link">Code Refactoring</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="General_Editing">
             <header>General Editing</header>
-            <p>These shortcuts cover fundamental operations that accelerate text manipulation and code organization, forming the basis of efficient coding in VS Code. Mastering these will significantly reduce mouse usage.</p>
+            <p>These shortcuts cover fundamental operations that accelerate **text manipulation** and **code organization**, forming the basis of efficient coding in VS Code. Mastering these will significantly reduce mouse usage.</p>
             <p>Duplicating lines is a common task, especially when creating similar functions or variable definitions. Use the dedicated command to quickly copy and paste the current line.</p>
             <h3>Core Editing Commands</h3>
             <ul>
-                <li>Move the current line up or down: <code class="text-sm">Alt + Up/Down</code></li>
-                <li>Duplicate the current line: <code class="text-sm">Shift + Alt + Up/Down</code></li>
-                <li>Delete the current line: <code class="text-sm">Ctrl + Shift + K</code></li>
-                <li>Toggle line comment: <code class="text-sm">Ctrl + /</code></li>
-                <li>Block comment selection: <code class="text-sm">Shift + Alt + A</code></li>
-                <li>Format the entire document: <code class="text-sm">Shift + Alt + F</code></li>
+                <li>Move the current line up or down: <kbd>Alt + Up/Down</kbd></li>
+                <li>Duplicate the current line: <kbd>Shift + Alt + Up/Down</kbd></li>
+                <li>Delete the current line: <kbd>Ctrl + Shift + K</kbd></li>
+                <li>Toggle line comment: <kbd>Ctrl + /</kbd></li>
+                <li>Block comment selection: <kbd>Shift + Alt + A</kbd></li>
+                <li>Format the entire document: <kbd>Shift + Alt + F</kbd></li>
             </ul>
             <p>For block manipulation, VS Code allows easy indentation adjustments. Use the tab or dedicated command for controlled structure changes.</p>
-            <div class="code-block">
-                Example of line duplication and movement
-                const initialValue = 0;
-                const finalValue = 100; Duplicate this line with Shift + Alt + Down
+            <div class="code-example">
+                <p class="code-title">Example of Line Duplication and Movement</p>
+                <code>
+                    const initialValue = 0;
+                    const finalValue = 100; // Duplicate this line with Shift + Alt + Down
+                </code>
             </div>
             <p>A crucial feature for rapid code changes is renaming symbols across the entire scope, which is typically faster than find-and-replace. This is covered in the Refactoring section.</p>
         </section>
         <section class="main-section" id="File_and_Window_Management">
             <header>File and Window Management</header>
-            <p>Efficient navigation between files and views is critical for large projects. These shortcuts allow you to quickly open, close, and arrange your editor windows.</p>
+            <p>Efficient navigation between files and views is critical for large projects. These shortcuts allow you to quickly **open, close, and arrange** your editor windows.</p>
             <p>Switching files without using the mouse is handled by the "Go to File" command, which uses fuzzy search for fast access. This significantly boosts productivity.</p>
-            <div class="code-block">
-                Command for opening the Command Palette
-                Ctrl + Shift + P
+            <div class="code-example">
+                <p class="code-title">Command for opening the Command Palette</p>
+                <code>Ctrl + Shift + P</code>
             </div>
-
             <p>Split-view editing is essential for reviewing different parts of a file or comparing two distinct files side-by-side. The following command splits the current editor.</p>
-
             <h3>Window Control</h3>
             <ul>
-                <li>Open a new window/instance: <code class="text-sm">Ctrl + Shift + N</code></li>
-                <li>Close the current window/instance: <code class="text-sm">Ctrl + Shift + W</code></li>
-                <li>Split the editor: <code class="text-sm">Ctrl + \</code></li>
-                <li>Focus next/previous editor group: <code class="text-sm">Ctrl + K, Ctrl + Right/Left</code></li>
-                <li>Toggle the integrated terminal: <code class="text-sm">Ctrl + `</code></li>
-                <li>Close current file tab: <code class="text-sm">Ctrl + W</code></li>
+                <li>Open a new window/instance: <kbd>Ctrl + Shift + N</kbd></li>
+                <li>Close the current window/instance: <kbd>Ctrl + Shift + W</kbd></li>
+                <li>Split the editor: <kbd>Ctrl + \</kbd></li>
+                <li>Focus next/previous editor group: <kbd>Ctrl + K, Ctrl + Right/Left</kbd></li>
+                <li>Toggle the integrated terminal: <kbd>Ctrl + `</kbd></li>
+                <li>Close current file tab: <kbd>Ctrl + W</kbd></li>
             </ul>
         </section>
         <section class="main-section" id="Navigation_and_Search">
             <header>Navigation and Search</header>
-            <p>Locating specific code or files quickly is a huge time-saver. VS Code provides powerful search capabilities that can span across files, or just within the current document. These shortcuts are essential for project traversal.</p>
-            <p>The global search feature allows you to find text across every file in your current workspace, supporting regular expressions and case sensitivity. The "Go to File" command is the fastest way to open files.</p>
-            <div class="code-block">
-                Global search across files
-                Ctrl + Shift + F
+            <p>Locating specific code or files quickly is a huge time-saver. VS Code provides powerful search capabilities that can span across files, or just within the current document. These shortcuts are essential for **project traversal**.</p>
+            <p>The **global search** feature allows you to find text across every file in your current workspace, supporting regular expressions and case sensitivity. The "Go to File" command is the fastest way to open files.</p>
+            <div class="code-example">
+                <p class="code-title">Global Search Across Files</p>
+                <code>Ctrl + Shift + F</code>
             </div>
-            <p>Jumping to definitions or references is crucial for understanding code flow. VS Code uses language server data to enable intelligent navigation.</p>
+            <p>Jumping to definitions or references is crucial for understanding code flow. VS Code uses language server data to enable **intelligent navigation**.</p>
             <h3>Search and Symbol Navigation</h3>
             <ul>
-                <li>Go to File (Quick Open): <code class="text-sm">Ctrl + P</code></li>
-                <li>Find in current file: <code class="text-sm">Ctrl + F</code></li>
-                <li>Go to Definition of symbol: <code class="text-sm">F12</code></li>
-                <li>Peek Definition (inline preview): <code class="text-sm">Alt + F12</code></li>
-                <li>Go to Symbol in File: <code class="text-sm">Ctrl + Shift + O</code></li>
-                <li>View all References: <code class="text-sm">Shift + F12</code></li>
-                <li>Navigate back/forward: <code class="text-sm">Alt + Left/Right</code></li>
+                <li>Go to File (Quick Open): <kbd>Ctrl + P</kbd></li>
+                <li>Find in current file: <kbd>Ctrl + F</kbd></li>
+                <li>Go to Definition of symbol: <kbd>F12</kbd></li>
+                <li>Peek Definition (inline preview): <kbd>Alt + F12</kbd></li>
+                <li>Go to Symbol in File: <kbd>Ctrl + Shift + O</kbd></li>
+                <li>View all References: <kbd>Shift + F12</kbd></li>
+                <li>Navigate back/forward: <kbd>Alt + Left/Right</kbd></li>
             </ul>
-            <p>Use <code class="text-sm">Ctrl + T</code> to search for symbols across all open workspaces and files.</p>
+            <p>Use <kbd>Ctrl + T</kbd> to search for symbols across all open workspaces and files.</p>
         </section>
         <section class="main-section" id="Debugging_Controls">
             <header>Debugging Controls</header>
-            <p>The integrated debugger is a powerful feature for analyzing runtime behavior. Shortcuts make controlling the execution flow seamless. Use the Run and Debug view (<code class="text-sm">Ctrl + Shift + D</code>) to manage breakpoints and variables.</p>
-            <p>Before starting, ensure your launch configuration is set up correctly in the <code class="text-sm">.vscode/launch.json</code> file. Starting the debug session is a single keypress.</p>
-
-            <div class="code-block">
-                Step Over command
-                F10
+            <p>The integrated debugger is a powerful feature for analyzing runtime behavior. Shortcuts make controlling the **execution flow** seamless. Use the Run and Debug view (<kbd>Ctrl + Shift + D</kbd>) to manage breakpoints and variables.</p>
+            <p>Before starting, ensure your launch configuration is set up correctly in the <kbd>.vscode/launch.json</kbd> file. Starting the debug session is a single keypress.</p>
+            <div class="code-example">
+                <p class="code-title">Step Over Command</p>
+                <code>F10</code>
             </div>
-            <p>Setting and removing breakpoints is an essential part of the debugging workflow. This action can be toggled directly on the line of code.</p>           
+            <p>Setting and removing breakpoints is an essential part of the debugging workflow. This action can be toggled directly on the line of code.</p> 
             <h3>Debug Execution Flow</h3>
             <ul>
-                <li>Start/Continue Debugging: <code class="text-sm">F5</code></li>
-                <li>Toggle Breakpoint: <code class="text-sm">F9</code></li>
-                <li>Stop Debugging: <code class="text-sm">Shift + F5</code></li>
-                <li>Step Into function call: <code class="text-sm">F11</code></li>
-                <li>Step Out of function call: <code class="text-sm">Shift + F11</code></li>
+                <li>Start/Continue Debugging: <kbd>F5</kbd></li>
+                <li>Toggle Breakpoint: <kbd>F9</kbd></li>
+                <li>Stop Debugging: <kbd>Shift + F5</kbd></li>
+                <li>Step Into function call: <kbd>F11</kbd></li>
+                <li>Step Out of function call: <kbd>Shift + F11</kbd></li>
             </ul>
         </section>
         <section class="main-section" id="Multi-Cursor_and_Selection">
             <header>Multi-Cursor and Selection</header>
-            <p>Multi-cursor editing is one of VS Code's most beloved features, allowing simultaneous editing at multiple points. This massively speeds up repetitive changes across multiple lines.</p>
+            <p>Multi-cursor editing is one of VS Code's most beloved features, allowing **simultaneous editing** at multiple points. This massively speeds up repetitive changes across multiple lines.</p>
             <p>The primary method involves adding a cursor above or below the current one, enabling column-like editing across different lines.</p>
-
-            <div class="code-block">
-                Add cursor above or below
-                Alt + Click (or Ctrl + Alt + Up/Down on some systems)
+            <div class="code-example">
+                <p class="code-title">Add Cursor Above or Below</p>
+                <code>Alt + Click (or Ctrl + Alt + Up/Down on some systems)</code>
             </div>
-            <p>The "Add Cursor to Next Occurrence" commands are the fastest way to target specific instances of a word without selecting every instance globally.</p>           
+            <p>The "Add Cursor to Next Occurrence" commands are the fastest way to target specific instances of a word without selecting every instance globally.</p>
             <h3>Selection Techniques</h3>
             <ul>
-                <li>Add cursor at selection: <code class="text-sm">Alt + Click</code></li>
-                <li>Select next occurrence of current word: <code class="text-sm">Ctrl + D</code></li>
-                <li>Select all occurrences of current word: <code class="text-sm">Ctrl + Shift + L</code></li>
-                <li>Expand/Shrink selection scope: <code class="text-sm">Shift + Alt + Right/Left</code></li>
+                <li>Add cursor at selection: <kbd>Alt + Click</kbd></li>
+                <li>Select next occurrence of current word: <kbd>Ctrl + D</kbd></li>
+                <li>Select all occurrences of current word: <kbd>Ctrl + Shift + L</kbd></li>
+                <li>Expand/Shrink selection scope: <kbd>Shift + Alt + Right/Left</kbd></li>
             </ul>
-            <p>Using <code class="text-sm">Ctrl + D</code> repeatedly allows you to select specific, non-contiguous instances of a variable or word for simultaneous editing.</p>
+            <p>Using <kbd>Ctrl + D</kbd> repeatedly allows you to select specific, non-contiguous instances of a variable or word for simultaneous editing.</p>
         </section>
         <section class="main-section" id="Terminal_and_Tasks">
             <header>Terminal and Tasks</header>
-            <p>The integrated terminal simplifies running shell commands and project tasks without leaving the editor. Efficient control over the terminal is vital for build, test, and run cycles.</p>
+            <p>The integrated terminal simplifies running shell commands and project tasks without leaving the editor. Efficient control over the terminal is vital for **build, test, and run** cycles.</p>
             <p>The main shortcut toggles the terminal's visibility, making it easy to hide or show as needed.</p>
-            <div class="code-block">
-                Toggle the integrated terminal
-                Ctrl + `
-            </div>           
-            <p>You can manage multiple terminal instances, navigate between them, and quickly create new ones.</p>            
+            <div class="code-example">
+                <p class="code-title">Toggle the Integrated Terminal</p>
+                <code>Ctrl + `</code>
+            </div>
+            <p>You can manage multiple terminal instances, navigate between them, and quickly create new ones.</p>
             <h3>Terminal Control</h3>
             <ul>
-                <li>Create New Terminal: <code class="text-sm">Ctrl + Shift + `</code></li>
-                <li>Focus Terminal: <code class="text-sm">Ctrl + `</code></li>
-                <li>Run Build Task: <code class="text-sm">Ctrl + Shift + B</code></li>
-                <li>Kill the active terminal: <code class="text-sm">Ctrl + K, Ctrl + H</code> (or use Command Palette)</li>
+                <li>Create New Terminal: <kbd>Ctrl + Shift + `</kbd></li>
+                <li>Focus Terminal: <kbd>Ctrl + `</kbd></li>
+                <li>Run Build Task: <kbd>Ctrl + Shift + B</kbd></li>
+                <li>Kill the active terminal: <kbd>Ctrl + K, Ctrl + H</kbd> (or use Command Palette)</li>
             </ul>
             <p>Configuring a default build task allows you to launch common tasks like compiling or linting with a single keypress.</p>
         </section>
         <section class="main-section" id="Code_Refactoring">
             <header>Code Refactoring</header>
-            <p>Refactoring shortcuts help you restructure your code safely and quickly, improving readability and maintainability. These features rely on language server support for accuracy.</p>
-            <p>The primary refactoring command, "Rename Symbol," is one of the most frequently used shortcuts.</p>
-
-            <div class="code-block">
-                Rename Symbol globally
-                F2
-            </div>           
-            <p>The "Quick Fix" menu provides context-aware refactoring options, such as extracting functions or variables, importing missing dependencies, or fixing syntax errors.</p>           
+            <p>Refactoring shortcuts help you restructure your code safely and quickly, improving **readability and maintainability**. These features rely on language server support for accuracy.</p>
+            <p>The primary refactoring command, "**Rename Symbol**," is one of the most frequently used shortcuts.</p>
+            <div class="code-example">
+                <p class="code-title">Rename Symbol Globally</p>
+                <code>F2</code>
+            </div>
+            <p>The "**Quick Fix**" menu provides context-aware refactoring options, such as extracting functions or variables, importing missing dependencies, or fixing syntax errors.</p>
             <h3>Refactoring and Quick Fixes</h3>
             <ul>
-                <li>Rename Symbol: <code class="text-sm">F2</code></li>
-                <li>Quick Fix/Show potential fixes: <code class="text-sm">Ctrl + .</code></li>
-                <li>Go to next Error or Warning: <code class="text-sm">F8</code></li>
-                <li>Go to previous Error or Warning: <code class="text-sm">Shift + F8</code></li>
+                <li>Rename Symbol: <kbd>F2</kbd></li>
+                <li>Quick Fix/Show potential fixes: <kbd>Ctrl + .</kbd></li>
+                <li>Go to next Error or Warning: <kbd>F8</kbd></li>
+                <li>Go to previous Error or Warning: <kbd>Shift + F8</kbd></li>
             </ul>
-            <p>Using <code class="text-sm">Ctrl + .</code> is indispensable for modern coding, instantly suggesting solutions for code smells or missing imports.</p>
+            <p>Using <kbd>Ctrl + .</kbd> is indispensable for modern coding, instantly suggesting solutions for code smells or missing imports.</p>
         </section>
     </main>
 </body>
