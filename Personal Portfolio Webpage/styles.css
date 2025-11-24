@@ -1,0 +1,231 @@
+/* Universal */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #2c2c2c;
+    line-height: 1.7;
+}
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+}
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Nav Bar */
+a {
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #007bff;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+#navbar a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+/* Home */
+#Home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+}
+.home p {
+    max-width: 600px;
+}
+.home h1 {
+    margin-top: -150px;
+    font-weight: 900;
+}
+#Home h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+#Home p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #555;
+    max-width: 600px;
+}
+/* Project */
+#projects {
+    padding: 3rem 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.project-tile {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-tile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+.project-tile img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.project-content {
+    padding: 1.5rem;
+}
+.project-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.project-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.project-link {
+    display: inline-block;
+    font-weight: 600;
+    color: #007bff;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.project-link:hover {
+    border-color: #007bff;
+}
+/* Contact */
+#contact {
+    padding: 2rem;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+    margin: 0 auto;
+}
+.contact-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 3rem;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005fcc;
+}
+
+.contact-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-links img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.contact-links img:hover {
+    opacity: 1;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+    #welcome-section p {
+        font-size: 1.1rem;
+    }
+    #projects h2,
+    #contact h2 {
+        font-size: 2.2rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    #navbar a {
+        font-size: 1rem;
+    }
+}
