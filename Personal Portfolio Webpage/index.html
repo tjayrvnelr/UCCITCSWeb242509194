@@ -8,57 +8,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav id="navbar">
         <a href="#welcome-section">Home</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
     <section id="welcome-section">
         <h1>Tjay Rhiven Eleria</h1>
-        <p>Hello. Welcome to my portfolio. I build clean and user centered digital interfaces.</p>
-         <a id="profile-link" 
-            href="https://github.com/tjayrvnelr" 
-            target="_blank">
-            <img src="img github.png" 
-            alt="Github">
-        </a>
+        <p>Hello. Welcome to my portfolio. I build clean and user friendly digital interfaces.</p>
+
+        <div class="social-links">
+            <a class="profile-link" href="https://github.com/tjayrvnelr" target="_blank">
+                <img src="img-github.png" alt="Github">
+            </a>
+            <a class="profile-link" href="#" target="_blank">
+                <img src="img-linkedin.png" alt="linkedin">
+            </a>
+            <a class="profile-link" href="#" target="_blank">
+                <img src="img-facebook.png" alt="Facebook">
+            </a>
+            <a class="profile-link" href="#" target="_blank">
+                <img src="img-instagram.png" alt="instagram">
+            </a>
+        </div>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
+
         <div class="projects-grid">
             <div class="project-tile">
-                <img src="img survey form.png" 
-                     alt="Survey Form">
+                <img src="img survey form.png" alt="Survey Form">
                 <div class="project-content">
                     <h3>Survey Form</h3>
                     <p>A feedback form designed for fast responses.</p>
                     <a href="https://survey-form-beta-liard.vercel.app/" target="_blank" class="project-link">View Project</a>
                 </div>
             </div>
+
             <div class="project-tile">
-                <img src="img tribute page.png" 
-                 alt="Tribute Page">
+                <img src="img tribute page.png" alt="Tribute Page">
                 <div class="project-content">
                     <h3>Tribute Page</h3>
                     <p>A page that highlights a well known destination.</p>
                     <a href="https://tribute-page-nu-six.vercel.app/" target="_blank" class="project-link">View Project</a>
                 </div>
             </div>
+
             <div class="project-tile">
-                <img src="img technical documentation.png" 
-                     alt="Technical Documentation">
+                <img src="img technical documentation.png" alt="Technical Documentation">
                 <div class="project-content">
                     <h3>VS Code Shortcut Guide</h3>
                     <p>A simple reference for common shortcuts.</p>
                     <a href="https://technical-documentation-five-black.vercel.app/" target="_blank" class="project-link">View Project</a>
                 </div>
             </div>
+
             <div class="project-tile">
-                <img src="img product landing page.png" 
-                alt="Product Landing Page">
+                <img src="img product landing page.png" alt="Product Landing Page">
                 <div class="project-content">
                     <h3>Product Landing Page</h3>
-                    <p>A clean promotional layout for a product.</p>
+                    <p>A clean layout for displaying a product.</p>
                     <a href="https://product-landing-page-alpha-five.vercel.app/" target="_blank" class="project-link">View Project</a>
                 </div>
             </div>
@@ -68,10 +80,10 @@
         <h2 class="contact-title">Contact Me</h2>
         <div class="contact-container">
             <div class="contact-form">
-                <label>Email</label>
-                <input type="email" placeholder="Enter your email" required>
-                <label>Message</label>
-                <textarea placeholder="Enter your message" required></textarea>
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <label for="message-textarea">Message</label>
+                <textarea id="message-textarea" placeholder="Enter your message" required></textarea>
                 <button type="submit">Submit</button>
             </div>
         </div>
